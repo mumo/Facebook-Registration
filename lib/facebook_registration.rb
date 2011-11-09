@@ -23,8 +23,7 @@ module FacebookRegistration
   end
 end
 
-facebook_config = Rails.root.join('/config/facebooker.yml')
-FACEBOOK_CONFIG = FacebookRegistration.load_configuration(facebook_config)
+
 
 if defined? Rails
   require 'helpers/helpers'

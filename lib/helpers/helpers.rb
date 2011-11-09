@@ -9,7 +9,7 @@ module FacebookRegistration
   
   def init_fb_registration
     raise "Must set Application ID for initializing" unless defined?(FACEBOOK_CONFIG) && FACEBOOK_CONFIG["app_id"]
-    "<div id=\"fb-root\"></div> \n <script src=\"http://connect.facebook.net/en_US/all.js#appId=#{FACEBOOK_CONFIG["app_id"]}&xfbml=1\"></script> \n <script src=\"http://code.jquery.com/jquery-1.4.4.min.js\"></script>"
+    "<div id=\"fb-root\"></div> \n <script src=\"http://connect.facebook.net/en_US/all.js#appId=#{FACEBOOK_CONFIG["app_id"]}&xfbml=1\"></script>"
   end
   
   def fb_registration_form(options={})
